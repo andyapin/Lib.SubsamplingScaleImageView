@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0-android</TargetFramework>
+		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<!--
+      Enable trim analyzers for Android class libraries.
+      To learn more, see: https://learn.microsoft.com/dotnet/core/deploying/trimming/prepare-libraries-for-trimming
+    -->
+		<IsTrimmable>true</IsTrimmable>
+		<!--
+      NOTE: you can simply add .aar or .jar files in this directory to be included in the project.
+      To learn more, see: https://learn.microsoft.com/dotnet/maui/migration/android-binding-projects
+    -->
+		
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageProjectUrl>https://github.com/andyapin/Lib.SubsamplingScaleImageView</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/andyapin/Lib.SubsamplingScaleImageView</RepositoryUrl>
+		<PackageTags>plugin;toolkit;maui;imageview;android;native;</PackageTags>
+		<Description>Native Binding for .NET MAUI android, using com.davemorrissey.labs:subsampling-scale-image-view:3.10.0</Description>
+		<Copyright>© andyapin - www.handityo.my.id</Copyright>
+		<Authors>Ibnu Hajar Handityo</Authors>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+</Project>
